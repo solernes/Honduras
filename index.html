@@ -1,77 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vitalab</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalab | Innovación al servicio de tu salud</title>
+    <link rel="icon" href="favicon.png" type="image/png"> <!-- Favicon actualizado -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS -->
 </head>
+
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="logo-vitalab.jpeg" alt="Vitalab Logo">
-    </div>
-    <div class="header-right">
-      <a href="mailto:info@laboratoriosvitalab.com"><i class="fas fa-envelope icon"></i></a>
-      <a href="#"><i class="fab fa-facebook icon"></i></a>
-      <a href="#"><i class="fab fa-instagram icon"></i></a>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <h1>Bienvenido a Vitalab</h1>
-          <p>Innovación al servicio de tu salud</p>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo-vitalab.jpeg" alt="Logo Vitalab">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="swiper-slide">
-          <h1>Diagnóstico Preciso</h1>
-          <p>Contamos con tecnología de vanguardia</p>
-        </div>
-        <div class="swiper-slide">
-          <h1>Confianza y Profesionalismo</h1>
-          <p>Tu salud en las mejores manos</p>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
+    </header>
 
-  <section class="about">
-    <div>
-      <h2>¿Quiénes somos?</h2>
-      <p>Vitalab es un laboratorio clínico con un enfoque especializado en inmunodiagnóstico. Nos caracterizamos por ofrecer pruebas precisas y confiables en las áreas de química sanguínea, hematología, inmunología, inmunofluorescencia, bacteriología, genética, parasitología y uroanálisis.</p>
-    </div>
-    <img src="quienes-somos.png" alt="Equipo de Vitalab">
-  </section>
+    <!-- BANNER -->
+    <section id="home">
+        <div class="banner">
+            <h1>Bienvenido a Vitalab</h1>
+            <p>Innovación al servicio de tu salud</p>
+        </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Vitalab. Todos los derechos reservados.
+    <!-- ABOUT US -->
+    <section id="about">
+        <div class="container">
+            <h2>¿Quiénes somos?</h2>
+            <div class="about-content">
+                <div class="text">
+                    <p>En Vitalab estamos comprometidos en ofrecer diagnosticos de la mas alta calidad. Nos enorgullece brindar un servicio confiable, con un enfoque humano, preciso y profesional. Nuestro equipo de expertos trabaja incansablemente para garantizar que cada prueba que realices sea procesada con los más altos estándares de calidad, respaldados por nuestro profundo conocimiento.
+Estamos aquí para acompañarte en tu camino hacia una mejor salud.</p>
+                </div>
+                <div class="image">
+                    <img src="quienes-somos.png" alt="Acerca de Nosotros">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Laboratorio</h3>
+                    <p>Realizamos análisis médicos con tecnología avanzada y personal altamente capacitado.</p>
+                </div>
+                <div class="card">
+                    <h3>Salud ocupacional</h3>
+                    <p>Exámenes de salud para empresas, garantizando el bienestar de los trabajadores.</p>
+                </div>
+                <div class="card">
+                    <h3>Exámenes precontratación</h3>
+                    <p>Pruebas necesarias para la contratación de nuevos empleados.</p>
+                </div>
+                <div class="card">
+                    <h3>Pruebas toxicológicas</h3>
+                    <p>Realizamos pruebas de detección de sustancias tóxicas y drogas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <div class="testimonial">
+                <p>"Excelente servicio, rapidez en los resultados y atención personalizada. Totalmente recomendado."</p>
+                <p>- Cliente Satisfecho</p>
+            </div>
+            <div class="testimonial">
+                <p>"Vitalab es mi laboratorio de confianza, me brindaron resultados precisos y a tiempo."</p>
+                <p>- Kevin Ahbiel</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="mailto:info@laboratoriosvitalab.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="message" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vitalab. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+   <p>Correo: <a href="mailto:info@laboratoriosvitalab.com">info@laboratoriosvitalab.com</a></p>
+    <div class="redes">
+      <i class="fab fa-facebook-f"></i>      
+      <i class="fab fa-instagram"></i>
+    </div>
   </footer>
-
-  <script>
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      autoplay: {
-        delay: 5000,
-      },
-    });
-  </script>
-</body>
-</html>
-  </footer>
-     <a href="https://wa.me/50499405290?text=Hola%2C%20quisiera%20cotizar%20un%20servicio%20de%20laboratorio"
+  <a href="https://wa.me/50499405290?text=Hola%2C%20quisiera%20cotizar%20un%20servicio%20de%20laboratorio"
      class="whatsapp-float" target="_blank" title="Cotiza por WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 </body>
+
 </html>

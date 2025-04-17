@@ -161,6 +161,27 @@ header nav ul li a {
     font-size: 1em;
 }
 
+/* GLOSSARY SECTION */
+#glossary {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+#glossary h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.glossary-term {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.glossary-description {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
 /* TESTIMONIALS */
 #testimonials {
     padding: 50px 0;

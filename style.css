@@ -28,9 +28,8 @@ a {
     max-width: 1200px;
 }
 
-/* HEADER */
 header {
-    background-color: #A0C4FF; /* azul pastel */
+    background-color: #005D9C;
     padding: 20px 0;
     color: white;
     display: flex;
@@ -42,22 +41,6 @@ header .logo img {
     max-width: 150px;
 }
 
-.social-contact {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.social-contact a {
-    color: white;
-    font-size: 1.5em;
-}
-
-.social-contact span {
-    font-size: 0.9em;
-}
-
-/* NAV */
 header nav ul {
     display: flex;
     list-style: none;
@@ -135,7 +118,6 @@ header nav ul li a {
 .service-cards {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .service-cards .card {
@@ -146,7 +128,6 @@ header nav ul li a {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    margin-bottom: 20px;
 }
 
 .service-cards .card:hover {
@@ -161,28 +142,7 @@ header nav ul li a {
     font-size: 1em;
 }
 
-/* GLOSSARY SECTION */
-#glossary {
-    padding: 50px 0;
-    background-color: #ffffff;
-}
-
-#glossary h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.glossary-term {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.glossary-description {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-}
-
-/* TESTIMONIALS */
+/* TESTIMONIALS SECTION */
 #testimonials {
     padding: 50px 0;
     background-color: white;
@@ -203,7 +163,7 @@ header nav ul li a {
     font-size: 1.2em;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 #contact {
     padding: 50px 0;
     background-color: #e6f7ff;
@@ -236,9 +196,6 @@ form button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 form button:hover {
@@ -247,7 +204,7 @@ form button:hover {
 
 /* FOOTER */
 footer {
-    background-color: #A0C4FF; /* azul pastel */
+    background-color: #005D9C;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -256,23 +213,36 @@ footer {
     width: 100%;
 }
 
-/* SOCIAL ICONS IN TOP RIGHT */
-.social-contact {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    z-index: 10;
-}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
 
-.social-contact a {
-    color: white;
-    font-size: 1.5em;
-}
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* FIXED WHATSAPP ICON FOR QUOTE BUTTON */
-form button i {
-    font-size: 1.5em;
-}
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content .text, .about-content .image {
+        width: 100%;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards .card {
+        width: 80%;
+        margin-bottom: 30px;
+    }

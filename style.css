@@ -98,3 +98,16 @@ footer .redes i {
   color: #0055a5;
   cursor: pointer;
 }
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  color: #25D366;
+  text-decoration: none;
+}
+
+.whatsapp-link:hover {
+  text-decoration: underline;
+}

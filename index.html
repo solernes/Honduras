@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vitalab - Innovación al servicio de tu salud</title>
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="logo-vitalab.jpeg" type="image/jpeg">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
+
     <!-- Header -->
-    <header>
-        <nav>
+    <header id="header" class="header">
+        <div class="container">
             <div class="logo">
-                <img src="logo-vitalab.jpeg" alt="Logo de Vitalab">
-                <h1>Innovación al servicio de tu salud</h1>
+                <img src="images/logo-vitalab.jpeg" alt="Vitalab" />
             </div>
-            <ul class="menu">
-                <li><a href="#about">¿Quiénes somos?</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-us">
-        <div class="content">
-            <h2>¿Quiénes somos?</h2>
-            <p>En Vitalab nos dedicamos a ofrecer soluciones innovadoras para la salud mediante pruebas diagnósticas precisas y de alta calidad. Estamos comprometidos con la salud de nuestros pacientes y con el avance de la ciencia médica.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Bienvenidos a Vitalab</h1>
+            <p>Innovación al servicio de tu salud</p>
         </div>
-        <div class="image">
-            <img src
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>¿Quiénes somos?</h2>
+            <img src="images/quienes-somos.png" alt="Quiénes somos" />
+            <p>Vitalab es un laboratorio enfocado en brindar servicios de diagnóstico clínico de alta calidad. Nos dedicamos a la innovación y el uso de tecnologías avanzadas para garantizar resultados precisos y confiables para nuestros pacientes.</p>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="service">
+                <h3>Laboratorio</h3>
+                <p>Ofrecemos una amplia gama de pruebas de laboratorio, incluyendo química sanguínea, hematología, inmunología, y más.</p>
+            </div>
+            <div class="service">
+                <h3>Salud Ocupacional</h3>
+                <p>Realizamos pruebas para la evaluación de la salud ocupacional de empleados, incluyendo análisis de riesgos y exámenes médicos laborales.</p>
+            </div>
+            <div class="service">
+                <h3>Exámenes Precontratación</h3>
+                <p>Realizamos exámenes médicos previos a la contratación para asegurar que los empleados se encuentren en óptimas condiciones de salud.</p>
+            </div>
+            <div class="service">
+                <h3>Pruebas Toxicológicas</h3>
+                <p>Contamos con pruebas toxicológicas avanzadas para detectar sustancias y asegurar un entorno laboral y personal saludable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <div class="testimonial">
+                <p>"Excelente servicio, rápidos y confiables. Siempre que necesito resultados confiables, acudo a Vitalab." - Juan Pérez</p>
+            </div>
+            <div class="testimonial">
+                <p>"Vitalab se ha convertido en nuestro laboratorio de confianza. Los recomiendo ampliamente." - Ana Gómez</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vitalab. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

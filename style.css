@@ -20,7 +20,7 @@ header {
 }
 
 .logo-header {
-  width: 380px;
+  width: 280px;
   margin-bottom: 25px;
   display: block;
   margin-left: auto;
@@ -36,7 +36,7 @@ header h1 {
 .slogan {
   font-size: 18px;
   margin-top: 10px;
-  font-style: Georgia;
+  font-style: italic;
 }
 
 section {

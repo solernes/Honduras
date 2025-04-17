@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vitalab</title>
   <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <div class="header-top">
-      <div class="logo-container">
-        <img src="logo-vitalab.jpeg" alt="Vitalab Logo" class="logo">
-      </div>
-      <div class="header-info">
-        <div class="social-icons">
-          <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-          <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div>
-        <div class="email">
-          <p><a href="mailto:info@laboratoriosvitalab.com">info@laboratoriosvitalab.com</a></p>
-        </div>
-      </div>
+  <header class="header">
+    <div class="logo">
+      <img src="logo-vitalab.jpeg" alt="Vitalab Logo">
+    </div>
+    <div class="header-right">
+      <a href="mailto:info@laboratoriosvitalab.com"><i class="fas fa-envelope icon"></i></a>
+      <a href="#"><i class="fab fa-facebook icon"></i></a>
+      <a href="#"><i class="fab fa-instagram icon"></i></a>
     </div>
   </header>
 
   <section class="hero">
-    <div class="hero-content">
-      <h1>Bienvenidos a Vitalab</h1>
-      <p>Innovación al servicio de tu salud</p>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h1>Bienvenido a Vitalab</h1>
+          <p>Innovación al servicio de tu salud</p>
+        </div>
+        <div class="swiper-slide">
+          <h1>Diagnóstico Preciso</h1>
+          <p>Contamos con tecnología de vanguardia</p>
+        </div>
+        <div class="swiper-slide">
+          <h1>Confianza y Profesionalismo</h1>
+          <p>Tu salud en las mejores manos</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <section class="about-us">
-    <h2>¿Quiénes somos?</h2>
-    <img src="quienes-somos.png" alt="Quienes somos">
-    <p>En Vitalab estamos comprometidos en ofrecer diagnosticos de la mas alta calidad. Nos enorgullece brindar un servicio confiable, con un enfoque humano, preciso y profesional. Nuestro equipo de expertos trabaja incansablemente para garantizar que cada prueba que realices sea procesada con los más altos estándares de calidad, respaldados por nuestro profundo conocimiento.
-Estamos aquí para acompañarte en tu camino hacia una mejor salud.</p>
+  <section class="about">
+    <div>
+      <h2>¿Quiénes somos?</h2>
+      <p>Vitalab es un laboratorio clínico con un enfoque especializado en inmunodiagnóstico. Nos caracterizamos por ofrecer pruebas precisas y confiables en las áreas de química sanguínea, hematología, inmunología, inmunofluorescencia, bacteriología, genética, parasitología y uroanálisis.</p>
+    </div>
+    <img src="quienes-somos.png" alt="Equipo de Vitalab">
   </section>
 
   <footer>
-    <p>&copy; 2025 Vitalab. Todos los derechos reservados.</p>
+    &copy; 2025 Vitalab. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000,
+      },
+    });
+  </script>
+</body>
+</html>
   </footer>
      <a href="https://wa.me/50499405290?text=Hola%2C%20quisiera%20cotizar%20un%20servicio%20de%20laboratorio"
      class="whatsapp-float" target="_blank" title="Cotiza por WhatsApp">

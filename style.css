@@ -126,3 +126,43 @@ footer .redes i {
     padding: 12px;
   }
 }
+
+.servicios-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.servicio {
+  text-align: center;
+}
+
+.servicio h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #003366; 
+}
+
+.servicio i {
+  font-size: 40px;
+  color: #003366; 
+  margin-bottom: 10px;
+}
+
+.servicio i:hover {
+  color: #0055a5; 
+}
+
+@media (max-width: 768px) {
+  .servicios-container {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+@media (max-width: 480px) {
+  .servicios-container {
+    grid-template-columns: 1fr; 
+  }
+}

@@ -64,12 +64,17 @@ ul li::before {
 
 .quienes-img {
   display: block;
-  max-width: 50%;
+  max-width: 90%;
+  width:auto
   margin: 30px auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
+@media (max-width: 768px) {
+  .quienes-img {
+    max-width: 100%; 
+  }
+}
 footer {
   background-color: #f0f4f8;
   text-align: center;

@@ -257,4 +257,72 @@ form button:hover {
 
 /* FOOTER */
 footer {
-    background-color: #
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes i {
+    font-size: 2em; /* Tamaño de los íconos */
+    margin: 0 10px;
+    color: white; /* Aseguramos que los íconos sean blancos */
+    transition: color 0.3s ease;
+}
+
+footer .redes i:hover {
+    color: #00b3b3; /* Color al pasar el ratón */
+}
+
+footer p {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Asegura que los elementos dentro de .container ocupen un 90% del ancho en pantallas pequeñas */
+    }
+
+    /* Ajuste de las imágenes en la sección 'About' */
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content .text, .about-content .image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-content .image img {
+        width: 80%; /* La imagen se adapta al 80% de su contenedor */
+        margin-bottom: 20px;
+    }
+
+    /* Ajustes a las tarjetas de servicios */
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards .card {
+        width: 80%; /* Las tarjetas ocupan un 80% del ancho */
+        margin-bottom: 20px;
+    }
+
+    /* Ajustes en el footer */
+    footer .redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .redes i {
+        margin: 0 15px; /* Espaciado entre los iconos */
+    }
+}

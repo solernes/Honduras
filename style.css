@@ -99,4 +99,22 @@ footer .redes i {
   cursor: pointer;
 }
 
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* verde de WhatsApp */
+  color: white; /* ícono en blanco */
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
 
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+  color: white;
+}

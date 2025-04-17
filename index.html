@@ -1,84 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitalab - Innovación al servicio de tu salud</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Vitalab | Innovación al servicio de tu salud</title>
+    <link rel="icon" href="favicon.png" type="image/png"> <!-- Favicon actualizado -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS -->
 </head>
-<body>
 
-    <!-- Header -->
-    <header id="header" class="header">
+<body>
+    <!-- HEADER -->
+    <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo-vitalab.jpeg" alt="Vitalab" />
+                <img src="logo-vitalab.jpeg" alt="Logo Vitalab">
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Bienvenidos a Vitalab</h1>
+    <!-- BANNER -->
+    <section id="home">
+        <div class="banner">
+            <h1>Bienvenido a Vitalab</h1>
             <p>Innovación al servicio de tu salud</p>
         </div>
     </section>
 
-    <!-- Quiénes Somos -->
-    <section id="about" class="about">
+    <!-- ABOUT US -->
+    <section id="about">
         <div class="container">
             <h2>¿Quiénes somos?</h2>
-            <img src="images/quienes-somos.png" alt="Quiénes somos" />
-            <p>Vitalab es un laboratorio enfocado en brindar servicios de diagnóstico clínico de alta calidad. Nos dedicamos a la innovación y el uso de tecnologías avanzadas para garantizar resultados precisos y confiables para nuestros pacientes.</p>
+            <div class="about-content">
+                <div class="text">
+                    <p>En Vitalab, nos dedicamos a ofrecer servicios de laboratorio innovadores y confiables, enfocados en
+                        el diagnóstico y bienestar de nuestros pacientes.</p>
+                </div>
+                <div class="image">
+                    <img src="quienes-somos.png" alt="Acerca de Nosotros">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="services" class="services">
+    <!-- SERVICES -->
+    <section id="services">
         <div class="container">
             <h2>Servicios</h2>
-            <div class="service">
-                <h3>Laboratorio</h3>
-                <p>Ofrecemos una amplia gama de pruebas de laboratorio, incluyendo química sanguínea, hematología, inmunología, y más.</p>
-            </div>
-            <div class="service">
-                <h3>Salud Ocupacional</h3>
-                <p>Realizamos pruebas para la evaluación de la salud ocupacional de empleados, incluyendo análisis de riesgos y exámenes médicos laborales.</p>
-            </div>
-            <div class="service">
-                <h3>Exámenes Precontratación</h3>
-                <p>Realizamos exámenes médicos previos a la contratación para asegurar que los empleados se encuentren en óptimas condiciones de salud.</p>
-            </div>
-            <div class="service">
-                <h3>Pruebas Toxicológicas</h3>
-                <p>Contamos con pruebas toxicológicas avanzadas para detectar sustancias y asegurar un entorno laboral y personal saludable.</p>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Laboratorio</h3>
+                    <p>Realizamos análisis médicos con tecnología avanzada y personal altamente capacitado.</p>
+                </div>
+                <div class="card">
+                    <h3>Salud ocupacional</h3>
+                    <p>Exámenes de salud para empresas, garantizando el bienestar de los trabajadores.</p>
+                </div>
+                <div class="card">
+                    <h3>Exámenes precontratación</h3>
+                    <p>Pruebas necesarias para la contratación de nuevos empleados.</p>
+                </div>
+                <div class="card">
+                    <h3>Pruebas toxicológicas</h3>
+                    <p>Realizamos pruebas de detección de sustancias tóxicas y drogas.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonios -->
-    <section id="testimonials" class="testimonials">
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
         <div class="container">
             <h2>Testimonios</h2>
             <div class="testimonial">
-                <p>"Excelente servicio, rápidos y confiables. Siempre que necesito resultados confiables, acudo a Vitalab." - Juan Pérez</p>
+                <p>"Excelente servicio, rapidez en los resultados y atención personalizada. Totalmente recomendado."</p>
+                <p>- Cliente Satisfecho</p>
             </div>
             <div class="testimonial">
-                <p>"Vitalab se ha convertido en nuestro laboratorio de confianza. Los recomiendo ampliamente." - Ana Gómez</p>
+                <p>"Vitalab es mi laboratorio de confianza, me brindaron resultados precisos y a tiempo."</p>
+                <p>- Cliente Satisfecho</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="footer" class="footer">
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="mailto:info@laboratoriosvitalab.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="message" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
         <div class="container">
             <p>&copy; 2025 Vitalab. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
+
 </html>

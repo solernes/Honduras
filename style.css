@@ -1,90 +1,32 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
-  color: #003366;
-  line-height: 1.6;
-  padding: 20px;
-}
-
 header {
+  background-color: white;
+  color: black;
+  padding: 20px 0;
   text-align: center;
-  padding: 40px 20px;
-  background-color: #0055a5;
-  color: white;
+  position: relative;
+  z-index: 10;
 }
 
 .logo-header {
-  width: 150px;
-  margin-bottom: 15px;
-}
-
-header h1 {
-  font-size: 48px;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
-.slogan {
-  font-size: 18px;
-  margin-top: 10px;
-  font-style: italic;
-}
-
-section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-h2 {
-  color: #0055a5;
-  font-size: 28px;
+  max-width: 100px;
+  margin-top: -30px;
   margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+  position: relative;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li::before {
-  content: "• ";
-  color: #0055a5;
-  font-weight: bold;
+.blue-stripe {
+  background-color: #007BFF;
+  height: 10px;
+  width: 100%;
+  margin-top: -5px;
 }
 
 .quienes-img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-footer {
-  background-color: #f0f4f8;
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 16px;
-  margin-top: 50px;
-}
-
-footer a {
-  color: #0055a5;
-  text-decoration: none;
-}
-
-footer .redes {
-  margin-top: 15px;
-}
-
-footer .redes i {
-  font-size: 24px;
-  margin: 0 10px;
-  color: #0055a5;
-  cursor: pointer;
+  display: block;
+  max-width: 50%;
+  margin: 0 auto 30px;
 }

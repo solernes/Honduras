@@ -7,31 +7,35 @@
     <title>Vitalab | Innovación al servicio de tu salud</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a2e0c6e6c9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a2e0e6adbd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container header-content">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="logo">
                 <img src="logo-vitalab.jpeg" alt="Logo Vitalab">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Acerca de nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="contact-icons">
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <span class="email">contacto@laboratoriosvitalab.com</span>
+            <div class="social-contact">
+                <span>info@laboratoriosvitalab.com</span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </header>
+
+    <!-- NAVIGATION -->
+    <div class="container" style="margin-top: 10px;">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- BANNER -->
     <section id="home">
@@ -47,8 +51,7 @@
             <h2>¿Quiénes somos?</h2>
             <div class="about-content">
                 <div class="text">
-                    <p>En Vitalab, nos dedicamos a ofrecer servicios de laboratorio innovadores y confiables, enfocados en
-                        el diagnóstico y bienestar de nuestros pacientes.</p>
+                    <p>En Vitalab, nos dedicamos a ofrecer servicios de laboratorio innovadores y confiables, enfocados en el diagnóstico y bienestar de nuestros pacientes.</p>
                 </div>
                 <div class="image">
                     <img src="quienes-somos.png" alt="Acerca de Nosotros">
@@ -82,7 +85,7 @@
         </div>
     </section>
 
-    <!-- TESTIMONIOS -->
+    <!-- TESTIMONIALS -->
     <section id="testimonials">
         <div class="container">
             <h2>Testimonios</h2>
@@ -97,7 +100,7 @@
         </div>
     </section>
 
-    <!-- CONTACTO -->
+    <!-- CONTACT -->
     <section id="contact">
         <div class="container">
             <h2>Contacto</h2>
@@ -105,15 +108,10 @@
                 <input type="text" name="name" placeholder="Nombre" required>
                 <input type="email" name="email" placeholder="Correo electrónico" required>
                 <textarea name="message" placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar mensaje</button>
+                <button type="submit"><i class="fab fa-whatsapp"></i> Cotiza acá</button>
             </form>
         </div>
     </section>
-
-    <!-- BOTÓN WHATSAPP FLOTANTE -->
-    <a href="https://wa.me/50499405290" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i> Cotiza acá
-    </a>
 
     <!-- FOOTER -->
     <footer>

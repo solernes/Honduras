@@ -5,28 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitalab | Innovación al servicio de tu salud</title>
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a2e0e6adbd.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.png" type="image/png"> <!-- Favicon actualizado -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS -->
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="container">
             <div class="logo">
                 <img src="logo-vitalab.jpeg" alt="Logo Vitalab">
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-
-    <!-- SOCIAL CONTACT ICONS IN TOP RIGHT -->
-    <div class="social-contact">
-        <span>info@laboratoriosvitalab.com</span>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+    <div class="redes">
+      <i class="fab fa-facebook-f"></i>      
+      <i class="fab fa-instagram"></i>
     </div>
-
     <!-- BANNER -->
     <section id="home">
         <div class="banner">
@@ -41,7 +44,8 @@
             <h2>¿Quiénes somos?</h2>
             <div class="about-content">
                 <div class="text">
-                    <p>En Vitalab, nos dedicamos a ofrecer servicios de laboratorio innovadores y confiables, enfocados en el diagnóstico y bienestar de nuestros pacientes.</p>
+                    <p>En Vitalab, nos dedicamos a ofrecer servicios de laboratorio innovadores y confiables, enfocados en
+                        el diagnóstico y bienestar de nuestros pacientes.</p>
                 </div>
                 <div class="image">
                     <img src="quienes-somos.png" alt="Acerca de Nosotros">
@@ -75,19 +79,6 @@
         </div>
     </section>
 
-    <!-- GLOSSARY -->
-    <section id="glossary">
-        <div class="container">
-            <h2>Glosario</h2>
-            <div class="glossary-term">Análisis de sangre:</div>
-            <div class="glossary-description">Pruebas realizadas para evaluar la salud general del paciente o para detectar enfermedades.</div>
-            <div class="glossary-term">Inmunología:</div>
-            <div class="glossary-description">Estudio del sistema inmunológico y su respuesta ante patógenos y enfermedades.</div>
-            <div class="glossary-term">Prueba de PCR:</div>
-            <div class="glossary-description">Técnica de laboratorio utilizada para detectar material genético de virus y bacterias.</div>
-        </div>
-    </section>
-
     <!-- TESTIMONIALS -->
     <section id="testimonials">
         <div class="container">
@@ -111,7 +102,7 @@
                 <input type="text" name="name" placeholder="Nombre" required>
                 <input type="email" name="email" placeholder="Correo electrónico" required>
                 <textarea name="message" placeholder="Mensaje" required></textarea>
-                <button type="submit"><i class="fab fa-whatsapp"></i> Cotiza acá</button>
+                <button type="submit">Enviar mensaje</button>
             </form>
         </div>
     </section>

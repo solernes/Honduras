@@ -89,6 +89,25 @@ header nav ul li a:hover {
     color: #333333cc;
     font-size: 1.2em;
 }
+.dots-indicator {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #cbd5e1; /* gris claro */
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #2563EB; /* azul corporativo */
+}
+
 
 /* WHATSAPP FLOAT */
 .whatsapp-float {
